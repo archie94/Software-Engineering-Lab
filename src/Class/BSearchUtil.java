@@ -7,6 +7,7 @@ public class BSearchUtil extends BinarySearch{
 		int size;
 		int item;
 		int i;
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		
 		System.out.println("Enter array size and then the integers in array");

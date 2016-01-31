@@ -10,6 +10,7 @@ public class BinarySearch {
 		int searchElement;
 		int array[];
 		int i;
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		
 		System.out.println("Enter size of array");

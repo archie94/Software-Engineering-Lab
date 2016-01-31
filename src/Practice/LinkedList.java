@@ -10,6 +10,7 @@ class Node{
 	}
 }
 public class LinkedList {
+	@SuppressWarnings("resource")
 	public static void main(String args[]){
 		Node head = null;
 		Scanner in = new Scanner(System.in);

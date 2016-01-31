@@ -8,6 +8,7 @@ class Stack {
 	public Stack(){
 		top = -1;
 		System.out.println("Enter size of stack");
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		size = in.nextInt();
 		arr = new int[size];
@@ -41,6 +42,7 @@ public class UseStack{
 	public static void main(String args[]){
 		Stack stack = new Stack();
 		int ch;
+		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);
 		while(true){
 			System.out.println("1.Push 2.Pop 3.Display 4.Terminate");
