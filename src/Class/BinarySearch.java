@@ -20,7 +20,7 @@ public class BinarySearch {
 	 * @param : key_int : the key to be searched 
 	 * @output : displays the result of search with displayResult() method
 	 */
-	public static void binarySearch(int[] array_int,int array_size_int, int key_int){
+	public static int binarySearch(int[] array_int,int array_size_int, int key_int){
 		int start_int = 0;
 		int end_int = array_size_int-1;
 		int middle_int;
@@ -35,7 +35,7 @@ public class BinarySearch {
 			middle_int = (start_int+end_int)/2;
 			if(array_int[middle_int] == key_int){
 				displayResult(middle_int); //  display result with middle_int as resultCode
-				return;
+				return 1;
 			}
 			else if(key_int > array_int[middle_int]){
 				start_int = middle_int+1;
@@ -47,6 +47,7 @@ public class BinarySearch {
 		if(start_int > end_int){
 			displayResult(-1);// display result .. -1 as resultCode to signify search failure 
 		}
+		return 0;
 	}
 	/*
 	 * The displayResult() displays the result of search
